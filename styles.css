@@ -1,10 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+}
+
 .container {
-    width: 1440px;
+    width: 330px;
+    height: 300px;
     background-color: hsl(213, 19%, 18%);
     color: hsl(216, 12%, 54%);
+    border-radius: 20px; 
+    padding: 25px;
+}
+
+.text-container h1 {
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.text-container p {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    line-height: 1.7;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: space-between;
     
 }
 
-h1 {
+.circle {
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 22%);
+    color: hsl(216, 12%, 54%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle:hover {
+    background-color: hsl(25, 97%, 53%);
     color: white;
+}
+
+button {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    border-radius: 40px;
+    border: none;
+    height: 40px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+.hidden {
+    display: none;
+}
+
+#page2 {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
