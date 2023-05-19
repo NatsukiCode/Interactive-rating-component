@@ -1,3 +1,12 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -8,19 +17,22 @@ body {
 }
 
 .container {
-    width: 330px;
-    height: 300px;
+    width: 340px;
+    height: 340px;
     background-color: hsl(213, 19%, 18%);
     color: hsl(216, 12%, 54%);
     border-radius: 20px; 
-    padding: 25px;
+    padding: 30px;
+}
+
+.logo {
+    margin-bottom: 30px;
 }
 
 .text-container h1 {
     color: white;
     font-family: 'Overpass', sans-serif;
-    font-weight: normal;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 .text-container p {
@@ -29,26 +41,32 @@ body {
     line-height: 1.7;
 }
 
-.circle-container {
+.rating-container {
     display: flex;
     justify-content: space-between;
-    
 }
 
-.circle {
+.circle-style {
     border-radius: 50%;
     background-color: hsl(213, 19%, 22%);
     color: hsl(216, 12%, 54%);
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Overpass', sans-serif;
 }
+
+.circle.selected {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+  }
 
 .circle:hover {
     background-color: hsl(25, 97%, 53%);
     color: white;
+    cursor: pointer;
 }
 
 button {
@@ -56,14 +74,16 @@ button {
     color: white;
     border-radius: 40px;
     border: none;
-    height: 40px;
+    height: 45px;
     width: 100%;
     margin-top: 30px;
+    letter-spacing: 3px;
 }
 
 button:hover {
     background-color: white;
     color: hsl(25, 97%, 53%);
+    cursor: pointer;
 }
 
 .hidden {
@@ -75,4 +95,21 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+
+.logo-thankYou {
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+#result {
+    font-size: 15px;
+    color: hsl(25, 97%, 53%);
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(213, 19%, 22%);
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 25px;
+    padding: 6px 0;
+    width: 190px;
 }
